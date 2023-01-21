@@ -1,11 +1,15 @@
+/* <a href="https://www.vecteezy.com/free-vector/weather">Weather Vectors by Vecteezy</a> */
+
+/* Varibales */
 :root {
   --primary-color: #fff;
   --secondary-color: #000;
-  --background-color: #cce6e6;
+  --background-color: #f5fbff;
+  --search-bg: #f3f2f2;
   --color-i: #22223b;
   --color-ii: #023047;
   --color-iii: #219ebc;
-  --color-iv: #6798c0;
+  --color-iv: #cfcfcf;
   --color-v: #758bfd;
   --color-vi: #6a040f;
   --color-vii: #d00000;
@@ -15,14 +19,117 @@
   --color-xi: #dbd816;
 }
 
+/* All elements and body */
+
 body {
   background-color: var(--background-color);
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-size: 1rem;
+  overflow: hidden;
 }
 
 * {
-  font-size: 18px;
-  font-family: "Poppins", sans-serif;
+  color: var(--secondary-color);
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Fixed classes */
+
+.displayFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main and All section */
+
+main {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.all-container {
+  width: 70%;
+  height: 80%;
+  background-color: var(--primary-color);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: #00000005 0px 1px 3px 0px, #1b1f2326 0px 0px 0px 1px;
+}
+
+/* Weather top */
+
+.weather-top {
+  width: 100%;
+  height: 10%;
+}
+
+.search-container {
+  width: 100%;
+  height: 100%;
+}
+
+#searchBar {
+  outline: none;
+  width: 90%;
+  height: 25%;
+  padding: 10px;
+  border: solid 2px var(--search-bg);
+  background-color: var(--search-bg);
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+#searchBar:focus {
+  outline: none;
+  background-color: #e7e7e7;
+}
+
+/* Weather mid */
+
+.weather-mid {
+  width: 100%;
+  height: 45%;
+  background-color: #a09c9c;
+}
+
+.icon-container {
+  width: 30%;
+  height: 100%;
+  background-color: var(--color-iv);
+}
+
+.details-container {
+  width: 70%;
+  height: 100%;
+  background-color: var(--color-i);
+}
+
+.temperature-container {
+  width: 100%;
+  height: 50%;
+  justify-content: flex-start;
+}
+
+.temp {
+  margin-left: 20px;
+  width: 20%;
+  height: 80%;
+  font-size: 4.5rem;
+}
+
+.overview-container {
+  width: 100%;
+  height: 50%;
 }
